@@ -51,7 +51,8 @@ function Order() {
   const fetcher = useFetcher();
   useEffect(
     function () {
-      if (!fetcher.data && fetcher.state === "idle") fetcher.load("/menu");
+      if (!fetcher.data && fetcher.state === "idle")
+        fetcher.load("/fast-react-pizza/menu");
     },
     [fetcher],
   );
