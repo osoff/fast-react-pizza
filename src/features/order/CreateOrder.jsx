@@ -176,7 +176,7 @@ export async function action({ request }) {
   //if all is ok then create new order and redirect
   const newOrder = await createOrder(order);
   store.dispatch(clearCart());
-  return redirect(`/order/${newOrder.id}`);
+  return redirect(`/fast-react-pizza/order/${newOrder.id}`);
   // return null;
 }
 
