@@ -11,6 +11,7 @@ import Order, { loader as orderLoader } from "./features/order/Order";
 import { action as updateOrderAction } from "./features/order/UpdateOrder";
 import AppLayout from "./ui/AppLayout";
 
+//  this route for deploy
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
